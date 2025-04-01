@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyDrift collection - eco store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body class="bg-light">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+        <!-- Logo with Bootstrap Recycle Icon: 
+            "bi bi-recycle" used to symbolize sustainability, renewal, and eco-friendliness. 
+            Matches the "DailyDrift" brand's green color theme and values. -->
+        <a class="navbar-brand fw-bold text-success" href="#">
+            <i class="bi bi-recycle me-2"></i>DailyDrift
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav me-auto ms-3 mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#products">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reviews">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+    
+            <form class="d-flex me-3">
+                <div class="input-group">
+                    <input type="text" 
+                           class="form-control rounded-pill" 
+                           placeholder="Search products...">
+                    <button class="btn btn-success rounded-pill ms-n5" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </form>
+
+            <div class="d-flex align-items-center">
+                <a href="#cart" class="btn btn-success position-relative rounded-pill px-3">
+                    <i class="bi bi-cart3 me-2"></i>Cart
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        3
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Hero Section -->
+<section class="hero-section bg-success bg-opacity-10 py-7">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 text-center text-lg-start mb-5 mb-lg-0">
+                <div class="hero-content mx-auto mx-lg-0">
+                    <span class="badge bg-success rounded-pill mb-3 px-4 py-2">Eco-Friendly Living</span>
+                    <h1 class="display-3 fw-bold mb-4 text-success">
+                        Welcome to DailyDrift
+                        <i class="bi bi-recycle ms-3"></i>
+                    </h1>
+                    <p class="lead mb-5 fs-4">
+                        Discover sustainable essentials for a greener tomorrow. 
+                        <span class="d-block mt-2">Shop our curated collection of earth-friendly products.</span>
+                    </p>
+                    <a href="#products" class="btn btn-success btn-lg px-5 py-3 rounded-pill shadow">
+                        Shop Now <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="hero-icons d-inline-block p-4 rounded-circle bg-success bg-opacity-25">
+                    <i class="bi bi-globe2 fs-1 text-success d-block mb-3"></i>
+                    <i class="bi bi-leaf fs-1 text-success d-block mb-3"></i>
+                    <i class="bi bi-basket2 fs-1 text-success"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Back to Top Button -->
+<a href="#" class="back-to-top text-white">
+    <i class="bi bi-arrow-up"></i>
+</a>
+
+<!-- Product Grid -->
+<main class="container py-5" id="products">
+    <div class="text-center mb-5">
+        <h2 class="display-5 mb-3 fw-bold">Our Drift Collection</h2>
+        <div class="row g-4">
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card product-card h-100">
+                    <img src="images/tshirt.jpg" class="card-img-top" alt="Organic Cotton T-Shirt">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2 fs-6">Organic Cotton T-Shirt</h5>
+                        <div class="price-tag">R349.99</div>
+                        <button class="btn btn-success rounded-pill px-3 ">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card product-card h-100">
+                    <img src="images/toothbrush.jpg" class="card-img-top" alt="Bamboo Toothbrush Set">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2 fs-6">Bamboo Toothbrush Set</h5>
+                        <div class="price-tag">R179.99</div>
+                        <button class="btn btn-success rounded-pill px-3 ">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card product-card h-100">
+                    <img src="images/bottle.jpg" class="card-img-top" alt="Reusable Water Bottle">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2 fs-6">Reusable Water Bottle</h5>
+                        <div class="price-tag">R299.99</div>
+                        <button class="btn btn-success rounded-pill px-3 ">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card product-card h-100">
+                    <img src="images/bag.jpg" class="card-img-top" alt="Eco-Friendly Bag">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2 fs-6">Eco-Friendly Bag</h5>
+                        <div class="price-tag">R449.99</div>
+                        <button class="btn btn-success rounded-pill px-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card product-card h-100">
+                    <img src="images/notebook.webp" class="card-img-top" alt="Recycled Paper Notebook">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2 fs-6">Recycled Paper Notebook</h5>
+                        <div class="price-tag">R149.99</div>
+                        <button class="btn btn-success rounded-pill px-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card product-card h-100">
+                    <img src="images/solar-P-bank.webp" class="card-img-top" alt="Solar-Powered Charger">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2 fs-6">Solar-Powered Charger</h5>
+                        <div class="price-tag">R599.99</div>
+                        <button class="btn btn-success rounded-pill px-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card product-card h-100">
+                    <img src="images/socks.jpg" class="card-img-top" alt="Bamboo Socks">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2 fs-6">Bamboo Socks</h5>
+                        <div class="price-tag">R199.99</div>
+                        <button class="btn btn-success rounded-pill px-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card product-card h-100">
+                    <img src="images/mat.jpg" class="card-img-top" alt="Eco-Friendly Yoga Mat">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2 fs-6">Eco-Friendly Yoga Mat</h5>
+                        <div class="price-tag">R749.99</div>
+                        <button class="btn btn-success rounded-pill px-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card product-card h-100">
+                    <img src="images/straws.jpg" class="card-img-top" alt="Reusable Straws">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2 fs-6">Reusable Straws</h5>
+                        <div class="price-tag">R119.99</div>
+                        <button class="btn btn-success rounded-pill px-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="col-lg-3 col-md-6">
+                <div class="card product-card h-100">
+                    <img src="images/cleaning.jpg" class="card-img-top" alt="Eco-Friendly Cleaning Products">
+                    <div class="card-body text-center">
+                        <h5 class="card-title mb-2 fs-6">Eco Cleaning Products</h5>
+                        <div class="price-tag">R449.99</div>
+                        <button class="btn btn-success rounded-pill px-3">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review Section -->
+    <section class="my-5 pt-4 border-top" id="reviews">
+        <h3 class="mb-4">Customer Reviews</h3>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5>Write a Review</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Rating</label>
+                                <select class="form-select">
+                                    <option>5 Stars</option>
+                                    <option>4 Stars</option>
+                                    <option>3 Stars</option>
+                                    <option>2 Stars</option>
+                                    <option>1 Star</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="3" placeholder="Your review"></textarea>
+                            </div>
+                            <button class="btn btn-success rounded-pill px-3 ">Submit Review</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-8">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex mb-3">
+                            <div class="rating-stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <small class="text-muted ms-2">- Yaya G.</small>
+                        </div>
+                        <p>Excellent quality and eco-friendly packaging!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white pt-5" id="contact">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-12 text-center mb-4">
+                <!-- Logo with Bootstrap Recycle Icon: 
+                    "bi bi-recycle" used to symbolize sustainability, renewal, and eco-friendliness. 
+                    Matches the "DailyDrift" brand's green color theme and values. -->
+                <a href="#" class="text-decoration-none d-inline-flex align-items-center">
+                    <i class="bi bi-recycle fs-1 text-success me-3"></i>
+                    <h2 class="text-success mb-0">DailyDrift</h2>
+                </a>
+            </div>
+
+            <div class="col-lg-6">
+                <h5 class="text-success mb-3">Quick Contact</h5>
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="col-12">
+                        <textarea class="form-control" rows="2" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-success rounded-pill px-3">Send</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="text-success mb-3">Details</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="bi bi-geo-alt text-success me-2"></i>
+                                123 Hi street, Germiston, 1401
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-clock text-success me-2"></i>
+                                Mon-Fri: 9am - 5pm
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-globe text-success me-2"></i>
+                                www.dailydrift.co.za
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="text-success mb-3">Connect</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="bi bi-whatsapp text-success me-2"></i>
+                                +27 83 123 4567
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-telephone text-success me-2"></i>
+                                Support: 0800 123 456
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-envelope text-success me-2"></i>
+                                info@dailydrift.co.za
+                            </li>
+                            <!-- Social media links -->
+                            <li class="mb-3">
+                                <a href="#" class="text-decoration-none text-white" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-facebook text-success me-2"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-decoration-none text-white" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-instagram text-success me-2"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-decoration-none text-white" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-twitter-x text-success me-2"></i>
+                                    Twitter
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-top border-secondary pt-4 mt-4 text-center">
+            <p class="mb-0 small text-white-50">
+                © 2025 DailyDrift Collection. All rights reserved.
+            </p>
+            <p class="mb-0 small text-white-50 mt-2">
+                Designed by Yandisa as part of the HyperionDev Software Engineering bootcamp.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
